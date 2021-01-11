@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.tippy-box[data-theme~='danger'] {
+  background-color: rgba(242, 222, 222, 0.99);
+  color: #b94a48;
+}
+
+.tippy-box[data-theme~='danger'][data-placement^='bottom'] > .tippy-arrow::before {
+  border-bottom-color: rgba(242, 222, 222, 0.99);
+}
+
+.frozen{
+background: #003973;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #E5E5BE, #003973);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #E5E5BE, #003973); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.blue-gradient {
+  background: linear-gradient(40deg,#45cafc,#303f9f) !important;
+  background-image: linear-gradient(40deg, rgb(69, 202, 252), rgb(48, 63, 159)) !important;
+  background-position-x: initial !important;
+  background-position-y: initial !important;
+  background-size: initial !important;
+  background-attachment: initial !important;
+  background-origin: initial !important;
+  background-clip: initial !important;
+  background-color: initial !important;
+}
+
+.react-select{
+  font-size: 0.8rem;
+}
+
+.react-invalid{
+  border: 1px solid #dc3545;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.icon-submit{
+  background:linear-gradient( 135deg, #70F570 10%, #49C628 100%);
+background:linear-gradient( 135deg, #70F570 10%, #49C628 100%);
+background:linear-gradient( 135deg, #70F570 10%, #49C628 100%);
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color:transparent;
+}
+
+.icon-save{
+  background:linear-gradient( 135deg, #65FDF0 10%, #1D6FA3 100%);
+background: linear-gradient( 135deg, #65FDF0 10%, #1D6FA3 100%);
+background:linear-gradient( 135deg, #65FDF0 10%, #1D6FA3 100%);
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color:transparent;
+}
+
+.icon-delete{
+  background:linear-gradient( 135deg, #FF9D6C 10%, #BB4E75 100%);
+background: linear-gradient( 135deg, #FF9D6C 10%, #BB4E75 100%);
+background:linear-gradient( 135deg, #FF9D6C 10%, #BB4E75 100%);
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color:transparent;
+}

@@ -1,0 +1,172 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    /*background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(69,86,102,1) 0%, rgba(34,34,34,1) 90% );*/
+    /*background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );*/
+    background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%,  rgba(85,88,218,1) 0%, rgba(95,209,249,1) 100.2% );
+    /*background-image: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));*/
+    /*background: linear-gradient(25deg,#d64c7f,#ee4758 50%);*/
+    
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.ocean {
+    height: 5%;
+    width:100%;
+    position:absolute;
+    bottom:-5.75rem;
+    left:0;
+    background: #015871;
+}
+
+.wave {
+    background: url(https://svgshare.com/i/Q8p.svg) repeat-x;
+    position: absolute;
+    top: -198px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 10s cubic-bezier( 0.36, 0.45, 0.43, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+    top: -175px;
+    animation: wave 12s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+}
+
+.wave:nth-of-type(3) {
+    top: -175px;
+    animation: wave 16s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.250s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+}
+
+@keyframes wave {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+@keyframes swell {
+    0%, 100% {
+        transform: translate3d(0,-25px,0);
+    }
+    50% {
+        transform: translate3d(0,5px,0);
+    }
+}
+
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*html,*/
+/*css {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*}*/
+
+/*.position {*/
+/*    margin-left: auto;*/
+/*    margin-right: auto;*/
+/*    text-align: center;*/
+/*    margin-top: 15%;*/
+/*}*/
+
+/*#workarea {*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    background-color: #1e1a3e;*/
+/*    font-family: Raleway;*/
+/*}*/
+
+/*#personal {*/
+/*    color:white;*/
+/*    text-decoration:none;*/
+/*    position:absolute;*/
+/*    bottom:15px;*/
+/*    right:2%;*/
+/*}*/
+/*!*    start code for the actual button:         *!*/
+
+
+/*!**/
+/*    Spot is the span on the inside of the href that*/
+/*    fills the parent and makes the hover and link work*/
+/*    for the entire div*/
+/**!*/
+
+/*.spot {*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*}*/
+/*!**/
+/*    This is the outer svg wrapper that the SVG itself will*/
+/*    fill. Multiple svg-wrapper classes can be put side by side.*/
+/**!*/
+
+/*.svg-wrapper {*/
+/*    margin-top: 0;*/
+/*    position: relative;*/
+/*    width: 150px;*/
+/*    !*make sure to use same height/width as in the html*!*/
+/*    height: 40px;*/
+/*    display: inline-block;*/
+/*    border-radius: 3px;*/
+/*    margin-left: 5px;*/
+/*    margin-right: 5px*/
+/*}*/
+/*!**/
+/*  This is where we define the fill, color, thickness,*/
+/*  and stroke pattern of the SVG when there is no hover.*/
+/*  The dasharray and offset together define the line position*/
+/*  under the words. Here's also where the transition speed is set.*/
+/**!*/
+
+/*#shape {*/
+/*    stroke-width: 6px;*/
+/*    fill: transparent;*/
+/*    stroke: #009FFD;*/
+/*    stroke-dasharray: 85 400;*/
+/*    stroke-dashoffset: -220;*/
+/*    transition: 1s all ease;*/
+/*}*/
+/*!**/
+/*    Pushing the text up into the SVG. Without this the*/
+/*    text would be below the div's.*/
+/**!*/
+
+/*#text {*/
+/*    margin-top: -35px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*#text a {*/
+/*    color: black;*/
+/*    text-decoration: none;*/
+/*    font-weight: 100;*/
+/*    font-size: 1.1em;*/
+/*}*/
+/*!**/
+/*    Changing the shape on hover. I change the color of the stroke,*/
+/*make it thinner, then set it to again wrap around the entire parent element.*/
+/**!*/
+
+/*.svg-wrapper:hover #shape {*/
+/*    stroke-dasharray: 50 0;*/
+/*    stroke-width: 3px;*/
+/*    stroke-dashoffset: 0;*/
+/*    stroke: #06D6A0;*/
+/*}*/
